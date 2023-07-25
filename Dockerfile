@@ -7,9 +7,6 @@ COPY . /app
 
 
 RUN pip install --no-cache-dir flask transformers tensorflow flask 
-
-RUN apk del .build-deps gcc musl-dev
-
 EXPOSE 2359
 
 ENV NAME ZeroShotClassification
