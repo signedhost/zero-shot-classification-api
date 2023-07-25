@@ -3,7 +3,7 @@
 from flask import Flask, request, jsonify
 from transformers import pipeline
 
-classifier = pipeline("zero-shot-classification", model="MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7", device=0)
+classifier = pipeline("zero-shot-classification", model="MoritzLaurer/DeBERTa-v3-base-mnli-fever-anli", device=0)
 
 app = Flask(__name__)
 
