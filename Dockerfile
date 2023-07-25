@@ -1,7 +1,6 @@
 # Copyright 2016 - 2023 MalwarePad Productions, Ella
 
-FROM python:3.9-alpine
-
+FROM python
 WORKDIR /app
 
 COPY . /app
