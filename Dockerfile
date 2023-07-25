@@ -5,7 +5,6 @@ WORKDIR /app
 
 COPY . /app
 
-RUN apk add --no-cache --virtual .build-deps gcc musl-dev
 
 RUN pip install --no-cache-dir flask transformers tensorflow flask 
 
